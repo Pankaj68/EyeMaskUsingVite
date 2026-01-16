@@ -4,7 +4,7 @@ let deepAR;
 
 (async () => {
   deepAR = await deepar.initialize({
-    licenseKey: 'ccbefbc9186f3fb32e82561a4b78ca4b098af548331354cc61f6ff55912cae3fc68f6661a2442dc2',
+    licenseKey: '06d66a806c030718de2af747a77ae8227e21f4580f2fdf483df7d1343fbaa2063ea701e05e945ab9',
     previewElement: document.getElementById('deepar-div'),
     effect: '/effects/EyeMaskARFilter-v2.deepar'
   });
