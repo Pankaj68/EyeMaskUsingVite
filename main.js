@@ -21,7 +21,7 @@ function setupUI() {
     const screenshotBase64 = await deepAR.takeScreenshot();
     const finalImage = await addBorderToImage(
       screenshotBase64,
-      '/Assets/border-3.png'
+      'public/Assets/border-3.png'
     );
 
     showPreview(finalImage);
