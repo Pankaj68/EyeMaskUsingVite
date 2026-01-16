@@ -6,7 +6,7 @@ let deepAR;
   deepAR = await deepar.initialize({
     licenseKey: 'ccbefbc9186f3fb32e82561a4b78ca4b098af548331354cc61f6ff55912cae3fc68f6661a2442dc2',
     previewElement: document.getElementById('deepar-div'),
-    effect: './effects/EyeMaskARFilter-v2.deepar'
+    effect: '/effects/EyeMaskARFilter-v2.deepar'
   });
 
   setupUI();
