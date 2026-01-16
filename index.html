@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DeepAR Screenshot</title>
+
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: black;
+    }
+
+    #deepar-div {
+      position: fixed;
+      inset: 0;
+    }
+
+    #controls {
+      position: fixed;
+      bottom: 30px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      z-index: 10;
+    }
+
+    #recordBtn {
+      width: 72px;
+      cursor: pointer;
+    }
+
+    #previewOverlay {
+      position: fixed;
+      inset: 0;
+      background: black;
+      display: none;
+      z-index: 20;
+    }
+
+    #previewImage {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #closePreview {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 30;
+    }
+
+    /* ✅ SAVE ICON – SINGLE SOURCE OF TRUTH */
+    #savePreview {
+      position: absolute;
+      bottom: 60px;        /* move up/down here */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 64px;
+      cursor: pointer;
+      background: none;
+      padding: 0;
+      border: none;
+      outline: none;
+      z-index: 30;
+    }
+
+    #savePreview:active {
+      transform: translateX(-50%) scale(0.92);
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="deepar-div"></div>
+
+  <div id="controls">
+    <img id="recordBtn" src="/Assets/record-btn.png" />
+  </div>
+
+  <div id="previewOverlay">
+    <img id="previewImage" />
+    <div id="closePreview">✕</div>
+    <img id="savePreview" src="/Assets/download.png" alt="Download" />
+  </div>
+
+  <script type="module" src="/main.js"></script>
+
+</body>
+</html>
